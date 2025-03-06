@@ -1,0 +1,10 @@
+footer {
+    margin: auto;
+    background-color: #1e1e2f;
+    color: #fff; /* Белый текст */
+    text-align: center; /* Центрирование текста */
+    padding: 0; /* Отступы внутри */
+    font-family: 'Arial', sans-serif; /* Шрифт */
+    box-shadow: 0 -4px 10px rgba(39, 29, 80, 0.366); /* Тень сверху */
+    border-top: 3px solid #ff4500; /* Верхняя граница */
+  }
