@@ -1,20 +1,21 @@
-import React, { useState } from 'react';
-import './Profile.css'; 
+import React, { useState } from "react";
+import "./Profile.css";
 
 function Profile() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const photos = [
-    '/photo1.jpg', 
-    '/photo2.jpg',
-    '/photo3.jpg',
-    '/photo4.jpg',
-    '/photo5.jpg',
-    '/photo6.jpg',
+    "/photo2.jpg",
+    "/photo3.jpg",
+    "/photo4.jpg",
+    "/photo5.jpg",
+    "/photo6.jpg",
   ];
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + photos.length) % photos.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + photos.length) % photos.length
+    );
   };
 
   const handleNext = () => {
@@ -25,10 +26,11 @@ function Profile() {
     <div className="profile">
       <h2>About Me</h2>
       <p>
-        Hi, my name is Rauan, I am 19 years old. I go to the gym to maintain my body tone. 
-        I went to karate for 10 years, I have the title of candidate master of sports and a black belt. 
-        As a child, I went to football and played the dombyra. I really love music and can play various musical instruments. 
-        I have been interested in programming since the 10th grade.
+        Hi, my name is Rauan, I am 19 years old. I go to the gym to maintain my
+        body tone. I went to karate for 10 years, I have the title of candidate
+        master of sports and a black belt. As a child, I went to football and
+        played the dombyra. I really love music and can play various musical
+        instruments. I have been interested in programming since the 10th grade.
       </p>
       <div className="photo-gallery">
         <button onClick={handlePrev}>&lt; Prev</button>
